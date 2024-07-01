@@ -25,7 +25,7 @@ generate_list() {
         echo
         echo "$context"
 
-        grep -v "^x " "$TODO_FILE" | grep "$context" | awk -v today="$TODAY" -v tomorrow="$TOMORROW" '
+        grep -v "^x " "$TODO_FILE" | grep "$context" | sed "s/$context//g" | awk -v today="$TODAY" -v tomorrow="$TOMORROW" '
             /due:/ {
                 due_date = gensub(/.*due:([0-9]{4}-[0-9]{2}-[0-9]{2}).*/, "\\1", "g", $0)
                 if (due_date <= today || due_date == tomorrow) print
