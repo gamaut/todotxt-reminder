@@ -42,11 +42,11 @@ The script will output (if run on June 27):
 
 ```
 @James
-(B) Finalize shipping for Canary Islands due:2024-06-28 +CustomerX @James
+(B) Finalize shipping for Canary Islands due:2024-06-28 +CustomerX
 
 @John
-(B) Ensure automated export running due:2024-06-27 +CustomerZ @John
-(C) Confirm DE availability due:2024-06-28 +CustomerZ @John
+(B) Ensure automated export running due:2024-06-27 +CustomerZ
+(C) Confirm DE availability due:2024-06-28 +CustomerZ
 ```
 
 ## Requirements
